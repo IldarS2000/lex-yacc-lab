@@ -92,14 +92,13 @@ expr    : SYMLP expr SYMRP      {   $$=  $2;  }
 
 void HandleError(char*s)
 {
-    if(count==0)
-    {PrintError(s);}
+    if (count==0) {
+        PrintError(s);
+    }
     count++;
 }
 
-
-extern 
-void yyerror(char *s)
+extern void yyerror(char *s)
 {
     PrintError(s);
 }

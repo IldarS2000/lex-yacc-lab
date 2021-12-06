@@ -1,60 +1,37 @@
-var_a = 0;
-lel = ke*6;
-a = 5;
-pow2stepen3 = 2^3;
-pow2stepen10 = 22^4;
-pow10stepen5div2000 = 10^5 / 2000;
-pow100stepenMinus2 = 10000^(-2);
-powIntOverflow = 2^100;
-bool_1_AND_0 = (var_a AND a);
-bool_1_OR_0 = (1 or 0);
-bool_NOT_1 = (not 1);
-bool_NOT_0 = not    0;
-bool_NOT_1OR0 = not (1 or 0);
-bool_NOT_1AND0 = not (1 and 0);
-bool_NOT0_AND_0 = (NOT 0) AND 0;
-bool_NOT0_AND_1 = (NOT 1) AND 0;
-bool_NOT1_AND_0 = (NOT 0) AND 1;
-bool_NOT1_AND_1 = (NOT 1) AND 1;
-bool_NOT0_OR_0 = (NOT 0) OR 0;
-bool_NOT0_OR_1 = (NOT 1) OR 0;
-bool_NOT1_OR_0 = (NOT 0) OR 1;
-bool_NOT1_OR_1 = (NOT 1) OR 1;
-boolMultNumber8 = (not 0 and 1) * 8;
-boolMultNumber7 = (not (1 and 0)) * 7;
-boolMultNumber0 = (not 1 and 0) * 8;
-b = 76/((357/5)*0);
-c = (34*5-78/3)+28;
-d = (-(45*76-1223+(8*78)));
-_0Tr = (1 + (a *d) * 78 - 136);
-f = (4*6-a);
-a1 = 1 + 2147483647;
-tt = (56*3^^5);
-tt = (56-^5);
-a2 = 2;
-a3 = (2 + 2)^2;
-a4 = (2^2 + ((a2 + a2)^4 + a3)^6 + a3)^8;
-a5 = 11323;
-a6 = 1111111111;
-b2 = 1231;
-b3 = a6 * b2;
-LongLongLongIdentifier = 1;
-b5 = -1;
-b6 = 1;
-Y& -= 6;
-Y = 5&&8;
-b = 1;
-longexpr0 = (10 + b * a3 / 3 - (1 +100000 * 200));
-longexpr1 =7631455564/((857/54)*3131);
-longexpr2 = (3456*53-7831334/3)+28132;
-d = (-(45*76-1223+(8*78)));
-____var____ = (1 + (a *d) * 78 - 136);
-useNotDefExpr = (4*6-ch);
-a1 = 1;
-tt = (56*3^^5);
-tt = (56-^5);
-Y& -= 6;
-Y = 5&&8;
+var1 = 0;
+var2 = ggg * 6;
+var3 = 10;
+
+bool1 = (var1 AND var2);
+bool2 = (1 or 0);
+bool3 = (not 1);
+bool4 = not 0;
+bool5 = not (1 or 0);
+bool6 = not (1 and 0);
+bool7 = (NOT 0) AND 0;
+bool8 = (NOT 1) AND 0;
+bool9 = (NOT 0) AND 1;
+bool10 = (NOT 1) AND 1;
+bool11 = (NOT 0) OR 0;
+bool12 = (NOT 1) OR 0;
+bool13 = (NOT 0) OR 1;
+bool14 = (NOT 1) OR 1;
+bool15 = (not 0 and 1) * 5;
+bool16 = (not (1 and 0)) * 6;
+bool17 = (not 1 and 0) * 7;
+
+var4 = 76 / ((357 / 5) * 0);
+var5 = (34 * 5 - 78 / 3) + 28;
+var6 = (-(45 * 76 - 1223 + (8 * 78)));
+var7 = (1 + (a * d) * 78 - 136);
+var8  (4 * 6 - a);
+
+LongLongLongIdentifier = 500;
+
+longexpr0 = (10 + 100 * 500 / 3 - (1 + 100000 * 200));
+longexpr1 = 7631455564 / ((857 / 54) * 3131);
+longexpr2 = (3456 * 53 - 7831334 / 3) + 28132;
+
 recall foR(f == (4 * 0));
 RecAll FoR((f == 78 - 3));
 RECAll For((f > 2 + 30));
@@ -64,6 +41,7 @@ ReCaLl fOr((f != 54 - 82));
 ReCaLl fOr(f AND (54 - 82));
 REcaLL FOR((25) OR (19 * 9));
 REcaLL FOR((25 OR (19 * 9));
+
 recall IN 5;
 rEcall iN 600 + +_2;
 recalL In c;
@@ -71,18 +49,23 @@ Recall in (b+35*c);
 Recall in (b+35+*c);
 rEcall iN 678-90*0+a1;
 rEcall iN a111;
+
 reCall ALL;
 recAll All;
+
 recaLl Rest;
 recalL REst in;
+
 REcall Next 5;
 REcAll nExt a;
 REcaLL NExt(b + 35 * c);
 ReCall NEXt 678 - 90 * 0 + a1;
+
 recAlL RECORD 5;
 recall rECOrd a;
 recall reCOrD (b + 35 * c);
 recall recoRd 678 - 90 * 0 + a1;
+
 recall whilE(d == (25 + 30));
 recall whILE((d == 25 + 30));
 recall WHIle((d > 25 + 30));
@@ -92,8 +75,10 @@ recall whILE((d <= 25 + 30));
 recall whILE((d => 25 + 30));
 recall wHILe((d != 25 + 30));
 Recall WHILe((d == 25 + 30));
+
 REcAll Nooptimize;
 RECALl nooPTIMIZE;
+
 RECAlL All fOr((d != 25 + 30)) wHILe((d != 25 + 30)) iN 678 - 90 * 0 + a1;
 ReCALL REst WhIlE((d >= 25 + 30)) nooPTIMIZE;
 recall NEXt 678 - 90 * 0 + a1 iN 678 - 90 * 0 + a1;

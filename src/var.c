@@ -15,21 +15,26 @@ static Variable* findVar(char* varname)
     }
     if (N == 1) {
         for (j = 0; j < nVars; j++) {
-            if (strcmp(vars[0][j].name, varname) == 0)
+            if (strcmp(vars[0][j].name, varname) == 0) {
                 return (*(vars) + j);
+            }
         }
-    } else if (N == 0)
+    } else if (N == 0) {
         return NULL;
+    }
 
     else {
-        for (i = 0; i < N; i++)
+        for (i = 0; i < N; i++) {
             for (j = 0; j < MAXVARS; j++) {
-                if (i * MAXVARS + j >= nVars + (N - 1) * MAXVARS)
+                if (i * MAXVARS + j >= nVars + (N - 1) * MAXVARS) {
                     return NULL;
+                }
 
-                if (strcmp(vars[i][j].name, varname) == 0)
+                if (strcmp(vars[i][j].name, varname) == 0) {
                     return (*(vars + i) + j);
+                }
             }
+        }
     }
     return NULL;
 }
@@ -48,10 +53,11 @@ static Variable* addVar(char* varname)
 
     vars[N - 1][nVars].value = 0;
     int len                  = strlen(varname) + 1;
-    if (len > MAX_NAME_LEN)
+    if (len > MAX_NAME_LEN) {
         vars[N - 1][nVars].name = malloc(strlen(varname) + 1);
-    else
+    } else {
         vars[N - 1][nVars].name = malloc(MAX_NAME_LEN);
+    }
 
     if (vars[N - 1][nVars].name == NULL) {
         PrintError("internal error creating variable '%s'", varname);

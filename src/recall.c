@@ -28,11 +28,13 @@ static char* dumpString(char* s)
     int i;
     int n = strlen(s);
 
-    if (n > 100)
+    if (n > 100) {
         n = 100;
+    }
 
-    for (i = 0; i < n; i++)
+    for (i = 0; i < n; i++) {
         buf[i] = dumpChar(s[i]);
+    }
     buf[i] = 0;
     return buf;
 }
@@ -40,10 +42,10 @@ static char* dumpString(char* s)
 extern void DumpRow(void)
 {
     if (nRow == 0) {
-        int i;
         fprintf(stdout, "-------|");
-        for (i = 1; i < 71; i++)
+        for (int i = 1; i < 71; i++) {
             fprintf(stdout, ".");
+        }
         fprintf(stdout, "\n");
     } else
         fprintf(stdout, "%6d |%.*s", nRow, lBuffer, buffer);
@@ -61,17 +63,21 @@ extern void PrintError(char* errorstring, ...)
 
     if (eof) {
         fprintf(stdout, "...... !");
-        for (i = 0; i < lBuffer; i++)
+        for (i = 0; i < lBuffer; i++) {
             fprintf(stdout, ".");
+        }
         fprintf(stdout, "^-EOF\n");
     } else {
         fprintf(stdout, "...... !");
-        for (i = 1; i < start; i++)
+        for (i = 1; i < start; i++) {
             fprintf(stdout, ".");
-        for (i = start; i <= end; i++)
+        }
+        for (i = start; i <= end; i++) {
             fprintf(stdout, "^");
-        for (i = end + 1; i < lBuffer; i++)
+        }
+        for (i = end + 1; i < lBuffer; i++) {
             fprintf(stdout, ".");
+        }
         fprintf(stdout, "   position: %d\n", end);
     }
     va_start(args, errorstring);
@@ -93,8 +99,9 @@ static int getNextLine(void)
 
     p = fgets(buffer, lMaxBuffer, file);
     if (p == NULL) {
-        if (ferror(file))
+        if (ferror(file)) {
             return -1;
+        }
         eof = true;
         return 1;
     }
@@ -109,20 +116,23 @@ extern int GetNextChar(char* b, int maxBuffer)
 {
     int frc;
 
-    if (eof)
+    if (eof) {
         return 0;
+    }
 
     while (nBuffer >= lBuffer) {
         frc = getNextLine();
-        if (frc != 0)
+        if (frc != 0) {
             return 0;
+        }
     }
 
     b[0] = buffer[nBuffer];
     nBuffer += 1;
 
-    if (debug)
+    if (debug) {
         printf("GetNextChar() => '%c'0x%02x at %d\n", dumpChar(b[0]), b[0], nBuffer);
+    }
     return b[0] == 0 ? 0 : 1;
 }
 
@@ -159,8 +169,9 @@ extern int main(int argc, char* argv[])
             infile = argv[i];
     }
 
-    if (infile == NULL)
+    if (infile == NULL) {
         infile = "input.txt";
+    }
 
     printf("reading file '%s'\n", infile);
     file = fopen(infile, "r");
@@ -177,8 +188,9 @@ extern int main(int argc, char* argv[])
     }
 
     DumpRow();
-    if (getNextLine() == 0)
+    if (getNextLine() == 0) {
         yyparse();
+    }
 
     free(buffer);
     fclose(file);
