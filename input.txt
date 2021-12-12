@@ -2,10 +2,10 @@ var1 = 0;
 var2 = ggg * 6;
 var3 = 10;
 var4 = 100 / ((205 / 2) * 0);
-var5 = (45 * var3 - 80 / 3) + var1;
+var5 = (45 * var3) - 80 / 3) + var1;
 var6 = (-(45 * 20 - 1105 + (8 * 6)));
 var7 = (1 + (a * d) * 78 - 136);
-var8  (4 * 6 - var1);
+var8  (4 * 6 - (var1);
 
 bool1 = (var1 AND var2);
 bool2 = (var1 or var3);
@@ -27,9 +27,39 @@ bool16 = (NOT 1) OR 1;
 LongLongLongLong = 500;
 LongLongLongLongLongLongLongLongLongLongLongLongLongLongLongLong = 2 * 2;
 
-longVar0 = (534 + 1234 * 500654 / 3 - (1 + 3456 * 200));
-longVar1 = 8012301203 / ((1143 / 1234) * 352435131);
+longVar0 = (534 + 1234 * var6 / 3 - (1 + 3456 * 200));
+longVar1 = 8012301203 / ((longVar0 / 1234) * 352435131);
 longVar2 = (3456 * 53 - 7831334 + 3) + 1234;
+longVar3 = a / ((1143 / 1234) * longVar4);
+longVar4 = (3456 * 53 - b + 3) + 1234;
+longVar5 = 8012301203 / ((longVar0 / 1234) * longVar5);
+longVar6 = (3456 * longVar1 - 7831334 + 3) + 1234;
+longVar7 = a / ((1143 / 1234) * longVar4);
+longVar8 = (3456 * 53 - b + 3) + 1234;
+longVar9 = longVar6 / ((longVar0 / 1234) * longVar5);
+longVar10 = (longVar7 * longVar1 - 7831334 + 3) + 1234;
+longVar11 = a / ((1143 / 1234) * longVar4);
+longVar12 = (3456 * 53 - longVar7 + 3) + 1234;
+longVar13 = longVar13 / ((longVar0 / 1234) * longVar5);
+longVar14 = (3456 * longVar1 - 7831334 + 3) + longVar2;
+
+longexpr0 = (10 + b * a3 / 3 - (1 +100000 * 200));
+longexpr1 =7631455564/((857/54)*3131);
+longexpr2=(3456*53-7831334/3)+28132;
+d=(-(45*76-1223+(8*78)));
+____var____ = (1 + (a *d) * 78 - 136);
+useNotDefExpr = (4*6-ch);
+
+error1 = (10 + 10;
+error2 = 10 + 10);
+error3 = (longVar14 + 10);
+error4 = (10 + longVar14);
+x x 5;
+x =;
+5 =;
+error = error;
+error5 = ((-(45 * (20) - 1105 + (8 * 6)));
+error6 = (-(45 * (20) - (1105 + (8 * 6)));
 
 a = 0;
 b = 10;
@@ -37,14 +67,14 @@ c = 20;
 f = 10;
 x = 5;
 recall foR(f == (5 * 0));
-RecAll FoR((f == 80 - 3));
+RecAll FoR((f == 80 - f));
 RECAll For((f > 6 + 50));
 reCall FOr((f >= 15 + 28));
 recALL fOR((f <= 26));
 ReCaLl fOr((f != 54 - a));
 ReCaLl fOr(f AND (54 - 10));
 REcaLL FOR((25) OR (20 * 9));
-REcaLL FOR((25 OR (20 * 9));
+REcaLL FOR((25 OR (a * 9));
 
 recall IN 5;
 recalL In c;
@@ -76,6 +106,16 @@ recall WhIlE((d >= 25 + 30));
 recall WhIlE((d =< 25 + 30));
 recall whILE((d <= 25 + 30));
 recall whILE((d => 25 + 30));
+recall wHILe((d != 25 + 30));
+Recall WHILe((d == 25 + 30));
+
+recall whilE(d == (var1 + 30));
+recall whILE((d == 25 + var2));
+recall WHIle((d or 25 + 30));
+recall WhIlE((d >= 25 + longvar3));
+recall WhIlE((d =< 25 + h));
+recall whILE((d <= k + 30));
+recall whILE((d and d + 30));
 recall wHILe((d != 25 + 30));
 Recall WHILe((d == 25 + 30));
 
